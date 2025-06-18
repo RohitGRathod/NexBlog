@@ -72,7 +72,7 @@ function Signup() {
                                 required: true
                             })}
                         />
-                        <button type="submit" style={{ marginTop: '1rem' }} className='w-full'>Sign Up</button>
+                        <button type="submit" style={{ marginTop: '1rem' }} className='w-full !bg-blue-500'>Sign Up</button>
                     </div>
 
                 </form>

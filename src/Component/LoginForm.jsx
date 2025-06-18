@@ -73,7 +73,7 @@ function LoginForm() {
 
                         <button
                             type="submit"
-                            className="w-full mt-4"
+                            className="w-full mt-4 !bg-blue-500"
                             style={{ marginTop: '1rem' }}
                         >Sign in
                         </button>

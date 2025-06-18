@@ -52,7 +52,7 @@ function Header() {
                 <li key={item.name}>
                   <button
                     onClick={handleNavigation(item.slug)}
-                    className="px-4 py-2 bg-blue-600 hover:bg-blue-500 text-white rounded-full transition duration-200"
+                    className="px-4 py-2 !bg-blue-800 hover:bg-blue-500 text-white rounded-full transition duration-200"
                   >
                     {item.name}
                   </button>
