@@ -1,4 +1,4 @@
-@import "tailwindcss";
+
 
 
 * {
@@ -9,9 +9,7 @@
 
 #root {
 width: 100%;
-  height: 100%;
-  display: flex;       /* or block / flex / grid — NOT inline */
-  flex-direction: column;  /* Optional, for stacking header/main/footer */
+  height: 100%; /* Optional, for stacking header/main/footer */
   margin: 0 auto;
   text-align: center;
 }

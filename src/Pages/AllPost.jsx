@@ -10,10 +10,10 @@ function AllPost() {
       .then((response) => {
         if (response)
           setPosts(response.documents)
-        
+
       })
   }, [])
-  
+
 
   if (posts.length === 0) {
     return (
@@ -31,19 +31,20 @@ function AllPost() {
     )
   }
   return (
-    <div className="py-8 w-full min-h-screen bg-gray-100">
-      <div className='w-full max-w-7xl mx-auto px-4'>
-        <div className=" flex flex-wrap gap-4">
-          {
-            posts.map((post) => (
-              <div key={post.$id} className='p-2 w-full sm:w-1/2 md:w-1/3 lg:w-1/4'>
-                <PostCard { ...post} />
-              </div>
-            ))
-          }
-        </div>
+    <div className="py-8 w-full min-h-screen bg-gray-100 ">
+      <div className="max-w-7xl mx-auto flex gap-4">
+          {posts.map((post) => (
+            <div
+              key={post.$id}
+              className="p-4 w-full sm:w-1/2 md:w-1/3 lg:w-1/4"
+            >
+              <PostCard {...post} />
+            </div>
+          ))}
+        
       </div>
     </div>
+
   )
 }
 
